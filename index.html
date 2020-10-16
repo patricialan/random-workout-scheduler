@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Workout Scheduler</title>
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+    <!--Jumbotron-->
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Random Workout Scheduler (RWS)</h1>
+    </div>
+
+    <!--Table-->
+    <div class="container-fluid pl-5 pr-5">
+        <div class="row">
+        <div class="col-md-12">
+            <table class="table table-hover mb-5">
+                <thead>
+                    <tr>
+                        <th class="table-dark"><h5>Exercise Type</h5></th>
+                        <th class="text-center"><h5>Monday</h5></th>
+                        <th class="text-center table-active"><h5>Tuesday</h5></th>
+                        <th class="text-center"><h5>Wednesday</h5></th>
+                        <th class="text-center table-active"><h5>Thursday</h5></th>
+                        <th class="text-center"><h5>Friday</h5></th>
+                        <th class="text-center table-active"><h5>Saturday</h5></th>
+                        <th class="text-center"><h5>Sunday</h5></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="table-dark">Arms</th>
+                        <td id="M_arms"></td>
+                        <td id="TU_arms" class="table-active"></td>
+                        <td id="W_arms"></td>
+                        <td id="TH_arms" class="table-active"></td>
+                        <td id="F_arms"></td>
+                        <td id="SA_arms" class="table-active"></td>
+                        <td id="SU_arms"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="table-dark">Core</th>
+                        <td id="M_core"></td>
+                        <td id="TU_core" class="table-active"></td>
+                        <td id="W_core"></td>
+                        <td id="TH_core" class="table-active"></td>
+                        <td id="F_core"></td>
+                        <td id="SA_core" class="table-active"></td>
+                        <td id="SU_core"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="table-dark">Glutes</th>
+                        <td id="M_butt"></td>
+                        <td id="TU_butt" class="table-active"></td>
+                        <td id="W_butt"></td>
+                        <td id="TH_butt" class="table-active"></td>
+                        <td id="F_butt"></td>
+                        <td id="SA_butt" class="table-active"></td>
+                        <td id="SU_butt"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="table-dark">Legs</th>
+                        <td id="M_legs"></td>
+                        <td id="TU_legs" class="table-active"></td>
+                        <td id="W_legs"></td>
+                        <td id="TH_legs" class="table-active"></td>
+                        <td id="F_legs"></td>
+                        <td id="SA_legs" class="table-active"></td>
+                        <td id="SU_legs"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="table-dark">Cardio</th>
+                        <td id="M_cardio"></td>
+                        <td id="TU_cardio" class="table-active"></td>
+                        <td id="W_cardio"></td>
+                        <td id="TH_cardio" class="table-active"></td>
+                        <td id="F_cardio"></td>
+                        <td id="SA_cardio" class="table-active"></td>
+                        <td id="SU_cardio"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="table-dark">Balance</th>
+                        <td id="M_balance"></td>
+                        <td id="TU_balance" class="table-active"></td>
+                        <td id="W_balance"></td>
+                        <td id="TH_balance" class="table-active"></td>
+                        <td id="F_balance"></td>
+                        <td id="SA_balance" class="table-active"></td>
+                        <td id="SU_balance"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <button type="button" class="btn btn-success btn-lg" id="randomize-btn"><h5>Randomize</h5></button>
+        </div>        
+    </div>
+    
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="workout.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
